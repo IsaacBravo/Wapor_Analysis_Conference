@@ -15,10 +15,6 @@
 </p>
 <hr>
 <p align="center">
-  <img src="https://github.com/IsaacBravo/Wapor_Analysis_Conference/blob/main/viz/topic_causes_CC_deforestation_year.png?raw=true" width="60%">
-</p>
-<hr>
-<p align="center">
   <img src="https://github.com/IsaacBravo/Wapor_Analysis_Conference/blob/main/viz/topic_consequences_CC_wildfires_year.png?raw=true" width="60%">
 </p>
 <hr>
