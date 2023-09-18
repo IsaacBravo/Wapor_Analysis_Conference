@@ -40,6 +40,18 @@ m3.2 <- glm.nb(engagement ~ consequences_multiple + region, data = df_full_reg)
 # Topic: People
 m4 <- glm.nb(engagement ~ people + region, data = df_full_reg)
 
+# Topic: Food
+m5 <- glm.nb(engagement ~ food + region, data = df_full_reg)
+
+# Topic: Solutions
+m6 <- glm.nb(engagement ~ solutions + region, data = df_full_reg)
+
+# Topic: Setting
+m7 <- glm.nb(engagement ~ setting + region, data = df_full_reg)
+
+# Topic: Visuals
+m8 <- glm.nb(engagement ~ visuals + region, data = df_full_reg)
+
 
 
 #-------------------------- Save Regression Models ----------------------------#
@@ -51,6 +63,10 @@ model_list[["m2.2_causes_mul"]] <- m2.2
 model_list[["m3_consequences_bin"]] <- m3
 model_list[["m3.2_consequences_mul"]] <- m3.2
 model_list[["m4_people"]] <- m4
+model_list[["m5_food"]] <- m5
+model_list[["m6_solutions"]] <- m6
+model_list[["m7_setting"]] <- m7
+model_list[["m8_visuals"]] <- m8
 
 saveRDS(model_list, "model_results.RDS")
 
@@ -88,7 +104,6 @@ all_objects <- ls()
 rm(list = all_objects)
 
 
-
-
+plot_coef(m2.2, "Causes of Climate Change")
 
 
